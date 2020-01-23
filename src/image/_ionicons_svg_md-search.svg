@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="384px" height="384px" viewBox="0 0 384 384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>_ionicons_svg_md-search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="_ionicons_svg_md-search" fill="#F41212" fill-rule="nonzero">
+            <path d="M273.509,241.372 L256.008,241.372 L249.437,235.886 C270.228,210.654 283.359,178.832 283.359,142.629 C283.358,63.632 219.896,0 141.135,0 C63.452,0 0,63.632 0,142.629 C0,221.626 63.452,285.257 142.225,285.257 C177.236,285.257 210.056,272.09 235.216,251.249 L241.777,256.736 L241.777,274.287 L351.18,384 L384,351.086 L273.509,241.372 Z M142.225,241.372 C87.523,241.372 43.762,197.485 43.762,142.629 C43.762,87.771 87.523,43.887 142.225,43.887 C196.925,43.887 240.687,87.771 240.687,142.629 C240.687,197.485 196.925,241.372 142.225,241.372 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
