@@ -7,11 +7,8 @@ const SearchArea = (props) => {
                 <div className="input-area">
                     <input type="text" placeholder="searching movie..." onChange={props.handleChange}/>
                     <button className="search-button" type="button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Search</button>
+                        Search
+                    </button>
                 </div>
             </form>
         </div>
