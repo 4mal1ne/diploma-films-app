@@ -60,10 +60,15 @@ class App extends Component {
         const numberPages = Math.floor(this.state.totalResults / 20);
         return (
             <div className="app">
-                <Home/>,
+                 <Home />,
+                    <div className="title-wrap">
+                        <h1>
+                            Unlimited movies, TV shows, and more.
+                        </h1>
+                        <SearchArea handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+                    </div>
                 {this.state.currentMovie == null ?
                     <div>
-                    <SearchArea handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
                     <MovieList viewMovieInfo={this.viewMovieInfo} movies={this.state.movies}/>
                 </div> : <MovieInfo currentMovie={this.state.currentMovie} closeMovieInfo={this.closeMovieInfo}/>},
                 { this.state.totalResults > 20 ? <Pagination pages={numberPages} nextPage={this.nextPage} currentPage={this.state.currentPage}/> : ''}
