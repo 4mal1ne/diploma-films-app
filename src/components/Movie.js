@@ -5,7 +5,7 @@ const Movie = (props) => {
     <div className="card-block">
         <div className="film-image">
             {
-                  props.image == null ? <img src={`https://s3-ap-southeast-1.amazonaws.com/update/static/default-image.jpg`} alt="card-film"/> : <img src={`https://image.tmdb.org/t/p/w185${props.image}`} alt="card-film"/>
+                  props.image == null ? <img src={`https://s3-ap-southeast-1.amazonaws.com/update/static/default-image.jpg`}/> : <img src={`https://image.tmdb.org/t/p/w185${props.image}`}/> 
             }
         </div>
         <div className="card-content">
