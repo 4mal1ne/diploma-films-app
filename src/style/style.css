@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+
 #root {
     max-width: 1170px;
     margin: auto;
@@ -22,34 +25,68 @@
 .brand-logo {
     cursor: pointer;
     text-decoration: none;
-    color: rgba(201, 34, 4, 0.3);
+    color: #F41212;
     font-family: fantasy;
     font-size: 45px;
 }
 
 .brand-logo:hover {
-    text-shadow: 0 0 1px rgb(204, 40, 11), 0 0 7px rgb(204, 40, 11), 0 0 7px rgb(204, 40, 11);
-    color: rgb(204, 40, 11);
+    text-shadow: 0 0 1px rgb(204, 40, 11), 0 0 3px rgb(204, 40, 11), 0 0 3px rgb(204, 40, 11);
+    color: #F41212;
     text-decoration: none;
 }
 
-.search-input {
-    margin: 30px 0;
+.title-wrap {
+    margin-top: 1rem;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    background-image: url('../image/title-wrap-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 9rem 6rem;
+    justify-content: center;
+}
+
+.title-wrap h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
     text-align: center;
+    margin: 0;
+}
+
+.search-input {
+    text-align: center;
+    display: grid !important;
+    grid-template-columns: auto 120px;
+    width: 480px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.input-area {
+    width: 480px;
 }
 
 .input-area input {
-    color:  rgba(201, 34, 4, 0.6);
+    color:  black;
+    box-sizing: border-box;
     font-size: 25px;
-    font-family: cursiv;
-    border: none;
-    background: #333333;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 0.5rem 0 0 0.5rem;
+    background: rgba(255, 255, 255, .9);
+    height: 5rem;
     outline: none;
     padding-left: 15px;
+    margin: 0;
 }
 
 .input-area input::placeholder {
-    color:  rgba(201, 34, 4, 0.5);
+    color:  black;
         text-indent: 0px;
         transition: text-indent 0.3s ease;
 }
@@ -61,18 +98,23 @@
 
 .search-button {
     position: relative;
-    color: rgb(204, 40, 11);
-    background-color: transparent;
-    font-size: 18px;
+    color: white;
+    background-color: #F41212;
+    height: 5rem;
+    padding: 0 3rem;
+    font-size: 28px;
     overflow: hidden;
+    box-sizing: border-box;
     outline: rgb(204, 40, 11);
     cursor: pointer;
     border: none;
     transition: .4s ease;
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin: 0;
 }
 
 .search-button:hover {
-    color: #333333;
+    color: #000000;
     background-color: rgb(204, 40, 11);
     transition-delay: .3s;
     box-shadow: 0 0 3px rgb(204, 40, 11), 0 0 7px rgb(204, 40, 11), 0 0 7px rgb(204, 40, 11);
@@ -94,38 +136,96 @@
     justify-content: space-between;
 }
 
+
+
 .card-block {
+    position: relative;
     width: 24%;
+    background: url('../image/not-found.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.75rem;
+}
+.film-image {
+    height: 380px;
 }
 
 .film-image img {
     width: 100%;
+    display: block;
+    height: 380px;
 }
 
-.card-block:hover {
-    cursor: pointer;
-    border: 4px solid rgba(201, 34, 4, 0.3);
-    text-shadow: 0 0 1px rgb(204, 40, 11), 0 0 1px rgb(204, 40, 11), 0 0 1px rgb(204, 40, 11);
+.card-content {
+    background: rgba(0, 0, 0, .75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.card-content a {
+    height: 3rem;
+    padding: 0 3rem;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(204, 40, 11);
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.card-content a:hover {
+    background-color: rgb(151, 26, 4);
+    transition: all 0.25s;
+    
+}
+
+.card-block:hover .card-content {
+    opacity: 1;
+
+}
+
+.movie-info-block {
+    display: grid;
+    grid-template-columns: 300px auto;
+    margin-bottom: 3rem;
 }
 
 .go-back-link {
-    color: rgba(201, 34, 4, 0.3);
-    font-size: 35px;
-    font-weight: 500;
-    font-family: fantasy;
-    letter-spacing: 3px;
-    padding-left: 15px;
+    height: 3rem;
+    padding: 0 3rem;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(204, 40, 11);
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5rem;
+    transition: all .5s;
+    width: min-content;
+    white-space: nowrap;
 }
 
 .go-back-link:hover {
-    cursor: pointer;
-    text-shadow: 0 0 2px rgb(204, 40, 11), 0 0 2px rgb(204, 40, 11), 0 0 2px rgb(204, 40, 11);
+    background-color: rgb(151, 26, 4);
 }
 
 .image-block-info {
     margin-top: 20px;
     width: 300px;
     display: flex;
+    background: url('../image/not-found.png');
+    background-size: cover;
+    background-position: center;
+    max-height: 400px;
 }
 
 .image-block-info img {
@@ -133,22 +233,28 @@
     box-sizing: border-box;
 }
 
+.info-container {
+    padding-left: 4rem;
+}
+
 .info-container h1 {
-    color: rgba(201, 34, 4, 0.3);
-    font-size: 40px;
-    font-family: cursive;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 .info-container h3 {
-    color: rgba(201, 34, 4, 0.3);
-    font-size: 25px;
-    font-family: cursive;
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
 }
 
 .info-container p {
-    color: rgba(201, 34, 4, 0.5);
+    color: white;
+    margin-top: 3rem;
     font-size: 20px;
-    font-family: cursive;
+    line-height: 36px;
 }
 
 .pagination {
@@ -164,14 +270,14 @@
 }
 
 .pagination a {
-    color: rgba(201, 34, 4, 0.5);
+    color: white;
+    opacity: 0.5;
     display: block;
     text-decoration: none;
 }
 
 .pagination a:hover {
-    cursor: pointer;
-    text-shadow: 0 0 2px rgb(204, 40, 11), 0 0 2px rgb(204, 40, 11), 0 0 2px rgb(204, 40, 11);
+    opacity: 1;
 
 }
 
@@ -180,4 +286,17 @@
     color: rgba(201, 34, 4, 0.5);
     font-family: cursive;
     
+}
+
+
+
+
+.title-wrap.title-wrap_inner-page {
+    padding: 2rem 6rem;
+    height: 200px;
+    background: none;
+}
+
+.title-wrap.title-wrap_inner-page h1 {
+    display:none;
 }
