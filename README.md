@@ -15,7 +15,7 @@ Simply films-searching app with "create React app"
  
  # Project screenshots
  
- [home page with logo, picture on the background + input and button] (https://github.com/4mal1ne/diploma-films-app/blob/master/src/image/screen/home.png)
+ [home page with logo, picture on the background + input and button]https://github.com/4mal1ne/diploma-films-app/blob/master/src/image/screen/home.png
  
  
  [Input request. When in focus, the standard placeholder disappears smoothly.]
