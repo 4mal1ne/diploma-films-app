@@ -1,14 +1,10 @@
 # diploma-films-app
-Simply films-searching app with "create React app"
+Simple films-searching app with "create React app"
 # How it works
  
- 1.download the project to your device by ssh link.
+ 1.clone the project to your device by ssh link.
  
- 
- 2.deploy the project on any code editor
- 
- 
- 3.run the "start" script in the speed dial or enter "npm start" in the terminal
+ 2.in the project folder open the terminal and enter "npm start". 
  
  # Free API link    https://www.themoviedb.org/documentation/api
  
